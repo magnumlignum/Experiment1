@@ -1,0 +1,32 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{
+double netBalance;
+double payment;
+double d1;
+double d2;
+double averagedailybalance;
+double interest;
+
+cout<<"Enter balance shown on bill\n"<<endl;
+cin>>netBalance;
+cout<<"\nEnter payment amount\n"<<endl;
+cin>>payment;
+cout<<"\nEnter no. of days in billing cycle\n"<<endl;
+cin>>d1;
+cout<<"\nEnter no. of days paid before billing cycle\n"<<endl;
+cin>>d2;
+
+averagedailybalance = (netBalance*d1-payment*d2)/d1;
+interest = (averagedailybalance*0.0152);
+
+cout<<"\nInterest = "<<interest<<endl;
+
+_getch();
+return 0;
+}
