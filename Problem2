@@ -1,0 +1,21 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{
+double mass;
+double density;
+
+cout<<"This program will calculate volume of an object\n"<<endl;
+cout<<"Enter mass in grams\n"<<endl;
+cin>>mass;
+cout<<"\nEnter density in grams per cubic cm\n"<<endl;
+cin>>density;
+cout<<"\nVolume = "<<mass/density<<endl;
+
+_getch();
+return 0;
+}
