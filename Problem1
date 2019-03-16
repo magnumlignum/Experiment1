@@ -1,0 +1,31 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{
+int box = 250;
+int sideline = 100;
+int premium = 50;
+int general = 25;
+int a;
+int b;
+int c;
+int d;
+
+cout<<"This program will calculate the total ticket sales after a game\n"<<endl;
+cout<<"Enter no. of box tickets sold\n"<<endl;
+cin>>a;
+cout<<"\nEnter no. of sideline tickets sold\n"<<endl;
+cin>>b;
+cout<<"\nEnter no. of premium tickets sold\n"<<endl;
+cin>>c;
+cout<<"\nEnter no. of general admission tickets sold\n"<<endl;
+cin>>d;
+cout<<"\nTotal sale: $"<<a*box+b*sideline+c*premium+d*general<<".00"<<endl;
+
+_getch();
+return 0;
+}
